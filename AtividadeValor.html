@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o numero é maior  ?</title>
+</head>
+<body>
+  <h1>Descubra qual numero é o maior </h1>
+  <p>Nome:<span id="NomePessoa"></span></p>
+  <p>Numero1:<span id="Numero1"></span></p>
+  <p>Numero2:<span id="Numero2"></span></p>
+  <p>MaiorValor:<span id="MaiorValor"></span></p> 
+  <p>MenorValor:<span id="MenorValor"></span></p>
+ 
+
+<script>
+  let Nome;
+  let Numero1;
+  let Numero2;
+  let NumeroMaior;
+  let NumeroMenor;
+
+  Nome = prompt("Digite o seu Nome");
+  
+  Numero1 = Number (prompt("Digite o primeiro valor:"));
+
+  Numero2 = Number (prompt("Digte o segundo valor:"));
+
+  if(Numero1 > Numero2){
+    NumeroMaior = "o numero maior é: " + Numero1;   
+      
+  }
+  if(Numero1 < Numero2){
+    NumeroMenor = "o numero menor é: " + Numero1;  
+  } 
+
+  if(Numero2 > Numero1){
+    NumeroMaior = "o numero maior é: " + Numero2;  
+  } 
+
+  if(Numero2 < Numero1){
+    NumeroMenor = "o numero menor é: " + Numero2;
+  } 
+
+
+  
+  //console.log(permissao); Pra mostrar no console do browse
+  document.getElementById("NomePessoa").innerHTML = Nome;
+  document.getElementById("Numero1").innerHTML = Numero1;
+  document.getElementById("Numero2").innerHTML = Numero2;
+  document.getElementById("MaiorValor").innerHTML = NumeroMaior;
+  document.getElementById("MenorValor").innerHTML = NumeroMenor;
+  
+</script>
+
+</body>
+</html>

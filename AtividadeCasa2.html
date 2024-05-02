@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+ </head>
+<body>
+  <h1>Loja do Jão</h1> 
+  <h1>Bem vindo</h1> 
+  <p><span id="nome"></span></p>
+  <p>O valor da sua compra foi de : R$<span id="pedido"></span> Reais</p>
+
+<script>
+ let nome; 
+ let hotdog; 
+ let hamburguer; 
+ let cheeseburguer; 
+ let refrigerante;
+ let batatafrita;
+ let pedido;
+
+ nome = prompt("Digite seu nome :");
+ 
+ hotdog = Number(prompt("Escolha a quantidade de hotdog: ")) * 1.50  
+ hamburguer = Number(prompt("Escolha a quantidade de hamburguer: ")) * 1.30  
+ cheeseburguer = Number(prompt("Escolha a quantidade de cheeseburguer: ")) * 1.50 
+ refrigerante = Number(prompt("Escolha a quantidade de refrigerante: ")) * 1.00 
+ batatafrita = Number(prompt("Escolha a quantidade de batatafrita: ")) * 0.80 
+
+ pedido = (hotdog + hamburguer + cheeseburguer + refrigerante + batatafrita);
+
+ document.getElementById("nome").innerHTML = nome;
+ document.getElementById("pedido").innerHTML = pedido;
+ 
+</script> 
+  </body>
+</html>
