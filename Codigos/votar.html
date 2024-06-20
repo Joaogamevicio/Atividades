@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+</head>
+<body>
+  <h1>Descubra se voce precisa votar:</h1>
+  <p>Nome:<span id="NomePessoa"></span></p>
+  <p>Idade:<span id="IdadePessoa"></span></p>
+  <p>Voto:<span id="Voto"></span></p> 
+  
+<script>
+  let Nome;
+  let Idade;
+  let Voto;
+  
+  Nome = prompt("Digite o seu Nome");
+  Idade = prompt("Digite a sua idade");
+  
+  if(Idade >= 18){
+    Voto = "Sim voce precisa votar"; 
+   }else{
+    Voto =  "Não voce não precisa votar";
+   }
+   if(Idade <=17){
+    Voto =  "Não";
+   }
+   
+   if(Idade >=65){
+    Voto =  "Voto Opicional";
+   }
+
+  //console.log(permissao); Pra mostrar no console do browse
+  document.getElementById("NomePessoa").innerHTML = Nome;
+  document.getElementById("IdadePessoa").innerHTML = Idade;
+  document.getElementById("Voto").innerHTML = Voto;
+  
+</script>
+
+</body>
+</html>

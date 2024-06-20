@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Maquina Resolvedora de Probelmas</title>
+
+</head>
+
+<body>
+    <h1> O que voce deseja saber ?</h1>
+    <button onclick="DescubraPeso()"> Descubra o seu peso e compare </button> <br>
+    <br><button onclick="DescubraVotar()"> Descubra se voce precisa votar </button> <br>
+    <br><button onclick="DescubraNascimento()"> Descubra a sua data de nascimento e compare </button> <br>
+    <br><button onclick="DescubraNota()"> Descubra sua nota Escolar </button> <br>
+    <br><button onclick="DescubraCurso()"> Descubra um curso </button> <br>
+    <br><button onclick="DescubraEmpresa()"> Descubra se voce vai bem em uma empresa </button> <br>
+    <br><button onclick="DescubraAdvinhação()"> Brinque de advinhar com alguem</button> <br>
+    <br><button onclick="DescubraCalculadora()"> Calculadora - Operações Basicas</button> <br>
+
+    <h1>Descubra seu peso</h1>
+    <div id = "peso"><div>
+    <p>Nome1:<span id="Peso_Nome1"></span></p>
+    <p>Peso1:<span id="Peso1"></span></p>
+    <p>Nome2:<span id="Peso_Nome2"></span></p>
+    <p>Peso2:<span id="Peso2"></span></p>
+    <p>Resultado:<span id="Resultado"></span></p>
+    <script>
+
+        const Peso_Nome1 =[];
+        const Peso1 = [];
+        const Peso_Nome2 = [];
+        const Peso2 = [];
+
+        function DescubraPeso(){
+            for(let i = 0; i < 1; i++){
+        Peso_Nome1[i] = (prompt("Pessoa1 Digite o seu nome:"))
+         Peso1[i] = Number(prompt(" Pessoa2 Digite o seu peso:"))
+         Peso_Nome2[i] = (prompt("Pessoa2 Digite o seu nome:"))
+        Peso2[i] = Number(prompt(" Pessoa2 Digite o seu peso:"))
+        if (Peso1 > Peso2) {
+            Resultado = "A primeira pessoa é mais pesada, pesando:" + Peso1;
+        }
+        if (Peso2 > Peso1) {
+            Resultado = "A segunda pessoa é mais pesada, pesando:" + Peso2;
+        }
+        DescubraPeso();
+    }
+}
+
+        document.getElementById("peso").innerHTML = Resultado
+        document.getElementById("Peso_Nome1").innerHTML = Peso_Nome1;
+        document.getElementById("Peso1").innerHTML = Peso1;
+        document.getElementById("Peso_Nome2").innerHTML = Peso_Nome2;
+        document.getElementById("Peso2").innerHTML = Peso2;
+        document.getElementById("Resultado").innerHTML = Resultado;
+
+
+
+    </script>
+
+</body>
+
+</html>

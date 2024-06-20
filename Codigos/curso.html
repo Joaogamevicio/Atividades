@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DescubraCursos</title>
+</head>
+<body>
+  <h1>DescubraCursos</h1>
+  <p>Nome:<span id="Nome"></span></p>
+  <p>Cursos: <span id="Cursos"></span></p>
+  <p>Resultado:<span id="Resultado"></span></p>
+  <p>Valor:<span id="Valor"></span></p>
+ 
+
+<script>
+  let Nome;
+  let Cursos;
+  let Valor;
+  let Resultado;
+
+
+  Nome = prompt("Digite o seu Nome");
+  Cursos =prompt("Escolha seu Curso: \n 1 - Curso de Informatica = $50.00 \n 2 - Curso de Administração = $50.00 \n 3 - Curso de RH = $50.00 \n 4 - Curso de Gastronomia = $55.00 ");
+
+switch (Cursos) {
+    case "1":
+        Resultado = "Você escolheu o curso de informatica"
+        Valor = " Você vai pagar $50.00 pelo seu curso"
+        break;
+        case "2":
+        Resultado = "Você escolheu o curso de Administração"
+        Valor = " Você vai pagar $50.00 pelo seu curso"
+        break;
+        case "3":
+        Resultado = "Você escolheu o curso de RH"
+        Valor = " Você vai pagar $50.00 pelo seu curso"
+        break;
+        case "4":
+        Resultado = "Você escolheu o curso de Gastronomia"
+        Valor = " Você vai pagar $55.00 pelo seu curso"
+        break;
+    default:
+        break;
+}
+ if(Cursos == "1" && Cursos == "2" && Cursos == "3" ){
+ Valor = "R$ 50.00";
+ }else{
+  Valor = "R$ 55.00";
+}
+  
+  //console.log(permissao); Pra mostrar no console do browse
+  document.getElementById("Nome").innerHTML = Nome;
+  document.getElementById("Cursos").innerHTML = Cursos;
+  document.getElementById("Valor").innerHTML = Valor;
+  document.getElementById("Resultado").innerHTML = Resultado;
+ 
+  
+</script>
+
+</body>
+</html>
